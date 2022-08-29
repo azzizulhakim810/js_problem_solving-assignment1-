@@ -1,4 +1,5 @@
-// Problem 1 
+////////////////////// Problem 1 
+
 /*
 
 function radianToDegree(radian) {
@@ -15,7 +16,7 @@ console.log(result3.toFixed(2));
 
 */
 
-// Problem 2 
+////////////////////// Problem 2 
 
 /*
 
@@ -38,7 +39,7 @@ isJavaScriptFile(inputs);
 
 */
 
-// Problem 3 
+////////////////////// Problem 3 
 
 /*
 
@@ -66,7 +67,7 @@ console.log(result4);
 
 */
 
-// Problem 4 
+///////////////////////Problem 4 
 
 /*
 
@@ -110,7 +111,7 @@ console.log(Price);
 */
 
 
-// Problem 5 
+////////////////////Problem 5 
 
 
 const firstFriend = {
