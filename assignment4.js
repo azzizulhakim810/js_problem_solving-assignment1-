@@ -79,30 +79,13 @@ function publicBusFare(people) {
   if (people >= 0 && people <= 50) {
     return 0;
   }
-  else if (people > 50 && people <= 100) {
-    let restPeople = people - busCapacity;
+  else if (people > 50 && people <= 500) {
+    let restPeople = (people % busCapacity) % microCapacity;
     let totalTicketPrice = restPeople * publicBusTicketPrice;
 
     return totalTicketPrice;
   }
-  else if (people > 100 && people <= 200) {
-    let restPeople = people - ((busCapacity*2) + microCapacity);
-    let totalTicketPrice = restPeople * publicBusTicketPrice;
 
-    return totalTicketPrice;
-  }
-  else if (people > 200 && people <= 300) {
-    let restPeople = people - ((busCapacity*4) + (microCapacity*3));
-    let totalTicketPrice = restPeople * publicBusTicketPrice;
-
-    return totalTicketPrice;
-  }
-  else if (people > 300 && people <= 400) {
-    let restPeople = people - ((busCapacity*7) + (microCapacity*1));
-    let totalTicketPrice = restPeople * publicBusTicketPrice;
-
-    return totalTicketPrice;
-  }
 }
 
 const Price = publicBusFare(365);
